@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fabian</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO --> https://fontawesome.com/search?q=instagran&o=r
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>FABIAN LEITON</h1>
+            <h2>Tecnologo desarrollo de software - Analista QA</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><<i class="fa-brands fa-instagram"></i></a>  
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>  
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Fabian Leiton </span>una persona responsable, con sentido de pertenencia, creativo,
+                deseos de superación y metas basadas en el logro
+                de objetivos, me considero una persona activa, organizado y
+                dispuesto a realizar actividades que partan en pro de mi crecimiento
+                personal, laboral e intelectual, tengo facilidad para trabajar en
+                equipo, criterio para la toma de decisiones y disciplina para la
+                realización de actividades propuestas. Dispuesto a cumplir con las
+                distintas funciones, obligaciones y normas laborales que tengan
+                establecidas. Tengo capacidad de responder a los requerimientos del
+                sector productivo en desarrollo de software. Actualmente domino el
+                lenguaje de programación C#, lenguaje de marcado HTML, CSS
+                estilos en cascada, manejo de Framework .NET Y .NET Core, Web
+                Api, Patrones de diseño.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            14-12-1987
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3206552342
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            fabyusuga12@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Calle 101 # 83 - 84 Apto 201
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Analista QA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-shield-cat"></i>
+                            <span>ANIME</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>CSharp</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Azure DevOps</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Visual Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnologia desarrollo de software</h4>
+                        <span class="casa">Institucion Universitaria Pascual Bravo</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Lenguaje de progrmacion (C#), Base de datos (SQL Server), IDE (Visual Studio y Visual Studio Code), ASP.NET, Programacio Orientada a objetos, Patron de diseño MVC</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenirria de software</h4>
+                        <span class="casa">Institucion Universitaria Pascual Bravo</span>
+                        <span class="fecha">2024 - Actualmente</span>
+                        <p>Pruebas de software, IDE (Intellij Idea), Lenguaje de programacion (Java), Herramientas (Cucumber, Selenium Web Driver, Serenety BDD, Lenguaje Gerkhin, Programacion PMO)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Practicas de desarrollo de software</h4>
+                        <span class="casa">Mobiletec Colombia S.A.S</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Creación de CRUD con ASP.NET y ASP.NET Core, Consumo y exposición de Web Apis, Conocimientos en metodologías agiles (Scrum), Creación de aplicación que se integre con el servidor
+                            Azure DevOps.
+                            Función: Enviar notificaciones al correo y al teams
+                            empresarial recordando las tareas y horas a ingresar
+                            en el Azure DevOps por día trabajado.
+                            Backend: IDE Visual Studio - ASP NET Core Web Api -
+                            Patrón de diseño MVC - Lenguaje c # - Buenas Prácticas
+                            de desarrollo. 
+                            Frontend: Angular - Lenguaje marcado HTML -
+                            CSS estilo encascada - JavaScript – Bootstrap                           
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista QA Junior</h4>
+                        <span class="casa">Mobiletec Colombia S.A.S</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Pruebas funcionales (Manuales), Metodologia Scrum, Diseñar casos de pruebas, Análisis de US, Revisión Par, Ejecución de pruebas, Regresión, Creación de Test Plans, Manejo base de datos SQL Server,
+                            Manejo de Azure DevOps, Soap IU, BizTalk, Conocimientos básicos en Automatización de pruebas con Katalon,
+                            Conocimiento automatización de pruebas con Selenium Web Driver, Playwright y AutoC0de,
+                            Conocimiento en herramientas Cucumber, Maven, Serenity BDD, Lenguaje Gherkin, Java y Intellij IDEA,
+                            Postman, Visual Studio.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista QA (Tester)</h4>
+                        <span class="casa">Belltech Colombia S.A.S</span>
+                        <span class="fecha">2024 - Actualmente</span>
+                        <p>Metodologia Scrum, Manejo Azure DevOps</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Pruebas.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Pruebas de software</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Desarrollo.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Desarrollo de software</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Scrum.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Metodologia Scrum</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Lenguaje.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Lenguaje programacion</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Ide.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Entorno de desarrollo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/sql.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Base de datos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Colombia, Medellin
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 3206552342 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: fabyusuga12@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><<i class="fa-brands fa-instagram"></i></a>  
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>  
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
