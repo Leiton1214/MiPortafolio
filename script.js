@@ -21,11 +21,11 @@ function efectoHabilidades(){
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 200){
         let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("CSharp");
-        habilidades[1].classList.add("htmlcss");
+        habilidades[0].classList.add("Java");
+        habilidades[1].classList.add("SeleniumWebDriver");
         habilidades[2].classList.add("sqlserver");
         habilidades[3].classList.add("azuredevops");
-        habilidades[4].classList.add("visualstudio");
+        habilidades[4].classList.add("IntellijIdea");
         habilidades[5].classList.add("comunicacion");
         habilidades[6].classList.add("trabajoenequipo");
         habilidades[7].classList.add("creatividad");
