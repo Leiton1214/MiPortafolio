@@ -18,31 +18,94 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#certificaciones" onclick="seleccionar()">CERTIFICACIONES</a></li>
+                    <li><a href="#certificaciones" onclick="seleccionar()">FORMACIÓN Y CURSOS</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <button class="nav-responsive" type="button" onclick="mostrarOcultarMenu()" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
         </header>
     </div>
 
-    <!-- SECCION INICIO --> https://fontawesome.com/search?q=instagran&o=r
+    <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
+                <img src="img/hero.png" alt="Fotografía de Fabian Leiton">
             </div>
             <h1>FABIAN LEITON</h1>
-            <h2>Tecnologo desarrollo de software - QA Automation</h2>
+            <h2>QA Automation Engineer</h2>
+            <p class="frase-profesional">Creo automatizaciones confiables para que los equipos entreguen software con calidad.</p>
+            <div class="tecnologias-destacadas" aria-label="Tecnologías principales">
+                <span>C#</span>
+                <span>.NET</span>
+                <span>Playwright</span>
+                <span>Azure DevOps</span>
+            </div>
+            <div class="acciones-inicio">
+                <a class="boton-inicio boton-principal" href="#proyectos">Ver proyectos</a>
+                <a class="boton-inicio boton-secundario" href="documentos/cv-eyder-fabian-leiton-usuga.pdf" download="Hoja-de-vida-Eyder-Fabian-Leiton-Usuga.pdf">
+                    Descargar CV <i class="fa-solid fa-download" aria-hidden="true"></i>
+                </a>
+            </div>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><<i class="fa-brands fa-instagram"></i></a>  
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>  
+                <a href="https://www.linkedin.com/in/fabian-leiton-553110260" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Fabian Leiton"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Leiton1214" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Fabian Leiton"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos y experiencia</h2>
+            <p class="intro-proyectos">Algunos escenarios de calidad y automatización en los que he trabajado.</p>
+            <div class="rejilla-proyectos">
+                <article class="tarjeta-proyecto">
+                    <div class="icono-proyecto"><i class="fa-solid fa-plane" aria-hidden="true"></i></div>
+                    <span class="tipo-proyecto">Tecnología de viajes</span>
+                    <h3>Automatización de pruebas E2E</h3>
+                    <p>Automatización y mantenimiento de escenarios de extremo a extremo, con análisis de resultados y clasificación de fallos para apoyar el aseguramiento de calidad.</p>
+                    <ul class="etiquetas-proyecto" aria-label="Tecnologías y prácticas">
+                        <li>C#</li>
+                        <li>.NET</li>
+                        <li>Playwright</li>
+                        <li>NUnit</li>
+                        <li>Allure</li>
+                        <li>Azure DevOps</li>
+                    </ul>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="icono-proyecto"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></div>
+                    <span class="tipo-proyecto">Sector bancario</span>
+                    <h3>Pruebas web para banca</h3>
+                    <p>Diseño de casos de prueba y automatización de pruebas web para un proyecto bancario, integradas al trabajo ágil y a los flujos de CI/CD.</p>
+                    <ul class="etiquetas-proyecto" aria-label="Tecnologías y prácticas">
+                        <li>Java</li>
+                        <li>Selenium WebDriver</li>
+                        <li>TestNG</li>
+                        <li>Maven</li>
+                        <li>Page Object Model</li>
+                    </ul>
+                </article>
+                <article class="tarjeta-proyecto">
+                    <div class="icono-proyecto"><i class="fa-solid fa-money-check-dollar" aria-hidden="true"></i></div>
+                    <span class="tipo-proyecto">Soluciones ATM</span>
+                    <h3>Calidad funcional y automatización</h3>
+                    <p>Pruebas funcionales y no funcionales para un proyecto de cajeros automáticos, con preparación de casos de prueba y automatización de escenarios.</p>
+                    <ul class="etiquetas-proyecto" aria-label="Tecnologías y prácticas">
+                        <li>Java</li>
+                        <li>Selenium WebDriver</li>
+                        <li>TestNG</li>
+                        <li>Test Plans</li>
+                        <li>Azure DevOps</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -51,36 +114,26 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Eyder Fabian Leiton Usuga </span>una persona responsable, con sentido de pertenencia, creativo,
-                deseos de superación y metas basadas en el logro
-                de objetivos, me considero una persona activa, organizado y
-                dispuesto a realizar actividades que partan en pro de mi crecimiento
-                personal, laboral e intelectual, tengo facilidad para trabajar en
-                equipo, disciplina para la realización de actividades propuestas. Dispuesto a cumplir con las
-                distintas funciones, obligaciones y normas laborales que tengan
-                establecidas. Tengo capacidad de responder a los requerimientos del
-                sector productivo en analisis calidad de software. Actualmente tengo conocimientos
-                en lenguaje de programación C#, Java, lenguaje de marcado HTML, CSS
-                estilos en cascada, manejo de Framework .NET Y .NET Core, Web
-                Api, Patrones de diseño, Selenium Web Driver, Intellij IDEA, Maven, 
-                TestNG, JUnit, Lenguaje Gherkin, Cucumber</p>
+            <p><span>Soy QA Automation Engineer</span> con experiencia en pruebas funcionales, no funcionales,
+            de regresión y smoke testing, en proyectos del sector bancario y de tecnología de viajes.
+            Actualmente automatizo escenarios E2E con C#, .NET, Playwright y NUnit, y reporto resultados
+            con Allure, trabajando con Azure DevOps y pipelines CI/CD. Antes automaticé con Java,
+            Selenium WebDriver, TestNG y Maven.
+            </p>
+            <p>Aplico Page Object Model y programación orientada a objetos para construir pruebas
+            mantenibles. Reviso KPIs y clasifico fallos como bug real, fallo de entorno o falso positivo.
+            También utilizo herramientas de IA como Claude Code y GitHub Copilot en mi desarrollo.
+            Trabajo con Scrum, con foco en mejora continua y calidad.
+            </p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
-                    <h3>Datos Personales</h3>
+                    <h3>Perfil profesional</h3>
                     <ul>
                         <li>
-                            <strong>Teléfono</strong>
-                            3206552342
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            fabyusuga12@gmail.com
-                        </li>
-                        <li>
                             <strong>Cargo</strong>
-                            <span>QA Automation</span>
+                            <span>QA Automation Engineer</span>
                         </li>
                     </ul>
                 </div>
@@ -121,10 +174,6 @@
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
         </div>
     </section>
 
@@ -133,93 +182,33 @@
         <div class="contenido-seccion">
             <h2>Skills</h2>
             <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Selenium Web Driver</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>SQL Server</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Azure DevOps</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Intellij IDEA</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="grupo-skills">
+                    <h3>Automatización</h3>
+                    <p>Playwright, Selenium WebDriver, Katalon Studio, NUnit, TestNG y Allure</p>
                 </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Responsabilidad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="grupo-skills">
+                    <h3>Lenguajes y plataformas</h3>
+                    <p>C#, .NET y Java</p>
+                </div>
+                <div class="grupo-skills">
+                    <h3>Herramientas de desarrollo</h3>
+                    <p>Visual Studio 2022, IntelliJ IDEA, Git, Maven y SonarQube</p>
+                </div>
+                <div class="grupo-skills">
+                    <h3>CI/CD y gestión</h3>
+                    <p>Azure DevOps, pipelines CI/CD y Scrum</p>
+                </div>
+                <div class="grupo-skills">
+                    <h3>APIs y rendimiento</h3>
+                    <p>Postman, SoapUI y JMeter</p>
+                </div>
+                <div class="grupo-skills">
+                    <h3>Calidad de software</h3>
+                    <p>Casos de prueba, Test Plans, pruebas de regresión, smoke testing, caja negra y caja blanca</p>
+                </div>
+                <div class="grupo-skills">
+                    <h3>Patrones e IA aplicada</h3>
+                    <p>Page Object Model, programación orientada a objetos, conocimiento de Screenplay, Claude Code y GitHub Copilot</p>
                 </div>
             </div>
         </div>
@@ -233,19 +222,19 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Ingenieria de software</h4>
-                        <span class="casa">Institucion Universitaria Pascual Bravo</span>
-                        <span class="fecha">Febrero 2024 - Actualmente</span>
-                        <p>Pruebas de software, IDE (Intellij Idea), Lenguaje de programacion (Java), Herramientas (Cucumber, Selenium Web Driver, Serenety BDD, Lenguaje Gerkhin, Programacion PMO)</p>
+                        <h4>Ingeniería de Software</h4>
+                        <span class="casa">Institución Universitaria Pascual Bravo</span>
+                        <span class="fecha">Febrero 2024 - Septiembre 2026</span>
+                        <p>Formación en ingeniería de software, automatización de pruebas y desarrollo.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Tecnologia desarrollo de software</h4>
-                        <span class="casa">Institucion Universitaria Pascual Bravo</span>
+                        <h4>Tecnología en Desarrollo de Software</h4>
+                        <span class="casa">Institución Universitaria Pascual Bravo</span>
                         <span class="fecha">Agosto 2018 - Agosto 2023</span>
-                        <p>Lenguaje de progrmacion (C#), Base de datos (SQL Server), IDE (Visual Studio y Visual Studio Code), ASP.NET, Programacio Orientada a objetos, Patron de diseño MVC</p>
+                        <p>Formación en C#, SQL Server, Visual Studio, ASP.NET, programación orientada a objetos y patrón MVC.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -255,36 +244,47 @@
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Automatizador de pruebas</h4>
-                        <span class="casa">Samtel Consultores S.A.S</span>
-                        <span class="fecha">Octubre 2024 - Actualmente</span>
-                        <p>Prueba funcionales, Pruebas no funcionales, Metodologia Scrum, Manejo Azure DevOps, Casos de prueba, 
-                            automatizacion de pruebas, Intellij Idea, Java, Selenium web driver, Cucumber, lenguaje gherkin, JUnit, TestNG,
-                            CI/CD, Banco BHD republica Dominicana, Sonar Qube.</p>
+                        <h4>QA Automation Engineer</h4>
+                        <span class="casa">Juniper Travel Technology</span>
+                        <span class="fecha">Octubre 2025 - Actualidad</span>
+                        <p>Automatización y mantenimiento de pruebas con Visual Studio 2022, .NET, C# y Playwright.
+                            Desarrollo asistido por IA con Claude Code y GitHub Copilot. Integración CI/CD con Azure DevOps,
+                            Git, NUnit y Allure. Revisión de KPIs y clasificación de fallos como bug real, fallo de entorno
+                            o falso positivo. Aplicación de programación orientada a objetos y Page Object Model.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Automatizador de Pruebas</h4>
+                        <span class="casa">Samtel Consultores</span>
+                        <span class="fecha">Octubre 2024 - Octubre 2025</span>
+                        <p>Pruebas funcionales y no funcionales en entornos ágiles con Scrum. Diseño de casos de prueba
+                            y Test Plans. Automatización con Selenium WebDriver, Java, IntelliJ IDEA, TestNG y Maven.
+                            Proyecto de testing web para Banco BHD (República Dominicana), aplicando Page Object Model,
+                            SonarQube y Azure DevOps.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
                         <h4>Analista QA</h4>
-                        <span class="casa">Belltech Colombia S.A.S</span>
+                        <span class="casa">Belltech</span>
                         <span class="fecha">Marzo 2024 - Octubre 2024</span>
-                        <p>Prueba funcionales, Pruebas no funcionales, Metodologia Scrum, Manejo Azure DevOps, Casos de prueba, 
-                            automatizacion de pruebas, Intellij Idea, Java, Selenium web driver, Cucumber, lenguaje gherkin, JUnit, TestNG.</p>
+                        <p>Pruebas funcionales y no funcionales en el proyecto de cajeros ATM de Bancolombia.
+                            Diseño de casos de prueba y Test Plans, y automatización con Selenium WebDriver,
+                            Java y TestNG.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
                         <h4>Analista QA Junior</h4>
-                        <span class="casa">Mobiletec Colombia S.A.S</span>
-                        <span class="fecha">Febrero 2023 - Enero 2024</span>
-                        <p>Pruebas funcionales (Manuales), Metodologia Scrum, Diseñar casos de pruebas, Análisis de US, Revisión Par, Ejecución de pruebas, Regresión, Creación de Test Plans, Manejo base de datos SQL Server,
-                            Manejo de Azure DevOps, Soap IU, BizTalk, Conocimientos básicos en Automatización de pruebas con Katalon,
-                            Conocimiento automatización de pruebas con Selenium Web Driver, Playwright y AutoC0de,
-                            Conocimiento en herramientas Cucumber, Maven, Serenity BDD, Lenguaje Gherkin, Java y Intellij IDEA,
-                            Postman, Visual Studio.
-                        </p>
+                        <span class="casa">MobileTec International, Inc.</span>
+                        <span class="fecha">Febrero 2023 - Febrero 2024</span>
+                        <p>Pruebas funcionales, no funcionales y de regresión. Análisis de historias de usuario,
+                            revisión por pares y creación de Test Plans. Trabajo con SQL Server, SoapUI, BizTalk
+                            y Azure DevOps.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -318,76 +318,140 @@
     <!-- SECCION CERTIFICACIONES -->
     <section id="certificaciones" class="certificaciones">
         <div class="contenido-seccion">
-            <h2>Certificaciones</h2>
-            <div class="galeria">
+            <h2>Formación y cursos</h2>
+            <div class="plataforma-cursos">
+                <h3>Platzi</h3>
+                <div class="galeria">
+                <article class="proyecto certificado-platzi">
+                    <a href="certificados/platzi/CertificadoProgramacionOrientadaAObjetos.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <span class="emisor">Platzi · Certificado</span>
+                        <h3>Programación Orientada a Objetos</h3>
+                        <span class="ver-certificado">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </article>
+                <article class="proyecto certificado-platzi">
+                    <a href="certificados/platzi/diploma-devops.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <span class="emisor">Platzi · Certificado</span>
+                        <h3>DevOps</h3>
+                        <span class="ver-certificado">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </article>
+                <article class="proyecto certificado-platzi">
+                    <a href="certificados/platzi/diploma-docker-avanzado.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <span class="emisor">Platzi · Certificado</span>
+                        <h3>Docker Avanzado</h3>
+                        <span class="ver-certificado">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </article>
+                <article class="proyecto certificado-platzi">
+                    <a href="certificados/platzi/diploma-docker-fundamentos.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <span class="emisor">Platzi · Certificado</span>
+                        <h3>Docker: Fundamentos</h3>
+                        <span class="ver-certificado">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </article>
+                <article class="proyecto certificado-platzi">
+                    <a href="certificados/platzi/diploma-introduccion-devops.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <span class="emisor">Platzi · Certificado</span>
+                        <h3>Introducción a DevOps</h3>
+                        <span class="ver-certificado">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </article>
+                <article class="proyecto certificado-platzi">
+                    <a href="certificados/platzi/Principios%20Solid.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <span class="emisor">Platzi · Certificado</span>
+                        <h3>Principios SOLID</h3>
+                        <span class="ver-certificado">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </article>
+                <article class="proyecto certificado-platzi">
+                    <a href="certificados/platzi/Curso%20de%20Unit%20Testing%20con%20C%23%20y%20.NET.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <span class="emisor">Platzi · Certificado</span>
+                        <h3>Unit Testing con C# y .NET</h3>
+                        <span class="ver-certificado">Ver certificado <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+                    </a>
+                </article>
+                </div>
+            </div>
+            <div class="plataforma-cursos">
+                <h3>Udemy</h3>
+                <div class="galeria">
                 <div class="proyecto">
-                    <img src="img/API Testing con POSTMAN. Masterclass todo en 1.jpg" alt="">
+                    <img src="img/API Testing con POSTMAN. Masterclass todo en 1.jpg" alt="Curso de API Testing con Postman">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>POSTMAN</p>
+                        <h3>Curso</h3>
+                        <p>API Testing con Postman</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Azure DevOps desde 0. Masterclass para tester.jpg" alt="">
+                    <img src="img/Azure DevOps desde 0. Masterclass para tester.jpg" alt="Curso de Azure DevOps para testing">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Azure DevOps</p>
+                        <h3>Curso</h3>
+                        <p>Azure DevOps para testing</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Comunicacion avanzada escucha activa empatia y asertividad.jpg" alt="">
+                    <img src="img/Comunicacion avanzada escucha activa empatia y asertividad.jpg" alt="Curso de comunicación avanzada">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Comunicacion</p>
+                        <h3>Curso</h3>
+                        <p>Comunicación avanzada</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Curso de Inglés para Hispanos - Nivel A1 garantizado.jpg" alt="">
+                    <img src="img/Curso de Inglés para Hispanos - Nivel A1 garantizado.jpg" alt="Curso de inglés para hispanos, nivel A1">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Inglés</p>
+                        <h3>Curso</h3>
+                        <p>Inglés - Nivel A1</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Curso de Inglés para Hispanos - Nivel A2-B1.1 garantizado.jpg" alt="">
+                    <img src="img/Curso de Inglés para Hispanos - Nivel A2-B1.1 garantizado.jpg" alt="Curso de inglés para hispanos, nivel A2-B1.1">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Inglés</p>
+                        <h3>Curso</h3>
+                        <p>Inglés - Nivel A2-B1.1</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Liderazgo y gestion de equipos.jpg" alt="">
+                    <img src="img/Liderazgo y gestion de equipos.jpg" alt="Curso de liderazgo y gestión de equipos">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Liderazgo</p>
+                        <h3>Curso</h3>
+                        <p>Liderazgo y gestión de equipos</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Master. Pruebas de Rendimiento con APACHE JMETER ESPAÑOL.jpg" alt="">
+                    <img src="img/Master. Pruebas de Rendimiento con APACHE JMETER ESPAÑOL.jpg" alt="Curso de pruebas de rendimiento con Apache JMeter">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>JMETER</p>
+                        <h3>Curso</h3>
+                        <p>Pruebas de rendimiento con JMeter</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Software Testing desde cero. MasterClass todo en 1 2024.jpg" alt="">
+                    <img src="img/Software Testing desde cero. MasterClass todo en 1 2024.jpg" alt="Curso de software testing">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Testing</p>
+                        <h3>Curso</h3>
+                        <p>Software testing</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Testing en contextos agiles.jpg" alt="">
+                    <img src="img/Testing en contextos agiles.jpg" alt="Curso de testing en contextos ágiles">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Testing</p>
+                        <h3>Curso</h3>
+                        <p>Testing en contextos ágiles</p>
                     </div>
                 </div>
                 <div class="proyecto">
-                    <img src="img/Testing exploratorio para agilizar tus pruebas.jpg" alt="">
+                    <img src="img/Testing exploratorio para agilizar tus pruebas.jpg" alt="Curso de testing exploratorio">
                     <div class="overlay">
-                        <h3>Certificacion</h3>
-                        <p>Testing</p>
+                        <h3>Curso</h3>
+                        <p>Testing exploratorio</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -398,39 +462,25 @@
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Colombia, Medellin
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Linea telefonica: 3206552342 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: fabyusuga12@gmail.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Medellín, Antioquia, Colombia
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:fabyusuga12@gmail.com">fabyusuga12@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/fabian-leiton-553110260" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/Leiton1214" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -441,9 +491,8 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><<i class="fa-brands fa-instagram"></i></a>  
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>  
+            <a href="https://www.linkedin.com/in/fabian-leiton-553110260" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Fabian Leiton"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Leiton1214" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Fabian Leiton"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
 

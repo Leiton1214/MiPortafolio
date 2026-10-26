@@ -1,41 +1,25 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
+
 function mostrarOcultarMenu(){
+    const nav = document.getElementById("nav");
+    const botonMenu = document.querySelector(".nav-responsive");
     if(menuVisible){
-        document.getElementById("nav").classList ="";
+        nav.classList = "";
+        botonMenu.setAttribute("aria-expanded", "false");
+        botonMenu.setAttribute("aria-label", "Abrir menú");
         menuVisible = false;
     }else{
-        document.getElementById("nav").classList ="responsive";
+        nav.classList = "responsive";
+        botonMenu.setAttribute("aria-expanded", "true");
+        botonMenu.setAttribute("aria-label", "Cerrar menú");
         menuVisible = true;
     }
 }
 
 function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
+    const botonMenu = document.querySelector(".nav-responsive");
+    botonMenu.setAttribute("aria-expanded", "false");
+    botonMenu.setAttribute("aria-label", "Abrir menú");
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
-    var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("Java");
-        habilidades[1].classList.add("SeleniumWebDriver");
-        habilidades[2].classList.add("sqlserver");
-        habilidades[3].classList.add("azuredevops");
-        habilidades[4].classList.add("IntellijIdea");
-        habilidades[5].classList.add("comunicacion");
-        habilidades[6].classList.add("trabajoenequipo");
-        habilidades[7].classList.add("creatividad");
-        habilidades[8].classList.add("dedicacion");
-        habilidades[9].classList.add("responsabilidad");
-    }
-}
-
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
-    efectoHabilidades();
-} 
